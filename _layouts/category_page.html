@@ -1,0 +1,23 @@
+---
+layout: default # Sử dụng layout 'default' của theme hacker (hoặc layout phù hợp khác của theme)
+---
+
+<h1>Chủ đề: {{ page.category | capitalize }}</h1>
+<hr>
+
+<ul class="post-list">
+  {% assign category_posts = site.categories[page.category] %}
+  {% if category_posts %}
+    {% for post in category_posts %}
+      <li>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> {# Định dạng ngày tháng #}
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>Chưa có bài viết nào trong chủ đề này.</li>
+  {% endif %}
+</ul>
+
+<hr>
+<p><a href="{{ '/categories/' | relative_url }}">Xem tất cả các chủ đề</a></p>
