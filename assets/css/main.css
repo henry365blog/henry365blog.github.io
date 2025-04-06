@@ -496,3 +496,22 @@ pre code {
    color: #0056b3;
 }
 */
+/* ==========================================================================
+   14. Homepage Section Heading Styling (Làm H2 to hơn)
+   ========================================================================== */
+
+/* Áp dụng cho các thẻ H2 là con trực tiếp của khu vực nội dung chính */
+/* Điều này giúp nó chỉ ảnh hưởng H2 trên index.md, không ảnh hưởng H2 trong bài viết */
+.main-content-area > h2 {
+  font-size: 2.1em; /* Đặt cỡ chữ giống H1 đã định nghĩa trước */
+  margin-top: 2.5em; /* Tăng khoảng cách phía trên các khu vực */
+  margin-bottom: 1em;
+  padding-bottom: 0.4em; /* Khoảng cách dưới chữ trước đường kẻ */
+  border-bottom: 1px solid #dee2e6; /* Thêm đường kẻ dưới giống mẫu Chirpy */
+  color: #343a40; /* Đảm bảo màu chữ giống H1 */
+}
+
+/* Chỉnh lại margin-top cho H2 đầu tiên nếu nó quá sát phần trên */
+.main-content-area > h2:first-of-type {
+    margin-top: 1em;
+}
