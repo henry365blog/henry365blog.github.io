@@ -1,6 +1,6 @@
 ---
-layout: default # Thử dùng layout 'page' của theme hacker. Nếu không ổn, thử đổi thành 'default'.
-title: Trang Chủ # Tiêu đề hiển thị trên tab trình duyệt (tùy chọn)
+layout: default
+title: Trang Chủ
 ---
 
 **Lời chào từ HenryVo - Chào mừng bạn đến với Blog Công nghệ!**
@@ -21,25 +21,22 @@ Mục tiêu của tôi là biến blog này thành một nguồn tài nguyên gi
 
 Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ngại để lại bình luận hay câu hỏi nhé. Sự tương tác của các bạn chính là động lực lớn nhất cho tôi!
 
-## ./Danh mục các chủ đề
+<hr style="border-color: #333;"> ## ./Danh mục các chủ đề
 * Để xem tất cả các chủ đề, hãy truy cập trang [Chủ đề]({{ '/categories/' | relative_url }}).*
 
-## ./ Bài viết mới_
+<hr style="border-color: #333;"> ## ./ Bài viết mới_
 
 <ul class="post-list">
   {% for post in site.posts limit:5 %}
     <li>
-      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> » {# Định dạng ngày tháng #}
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> » <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     </li>
   {% endfor %}
 </ul>
 
-## ./ Danh mục bài viết cũ
+<hr style="border-color: #333;"> ## ./ Danh mục bài viết cũ
 
-<p><a href="{{ '/archive/' | relative_url }}">>> Xem tất cả bài viết...</a></p>
-
-Một lần nữa, chào mừng bạn đến với Blog của HenryVo!
+<p><a href="{{ '/archive/' | relative_url }}">>> Xem tất cả bài viết...</a></p> <hr style="border-color: #333;"> Một lần nữa, chào mừng bạn đến với Blog của HenryVo!
 
 Trân trọng
 HenryVo
