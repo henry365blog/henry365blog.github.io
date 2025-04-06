@@ -2,6 +2,7 @@
 layout: post
 title:  "Bài Viết Đầu Tiên Của Tôi"
 date:   2025-04-06 14:56:00 +0700  # Giờ hiện tại, bạn có thể để nguyên hoặc sửa chút
+categories: [gioi-thieu, blog]
 ---
 
 Chào mừng bạn đã đến với blog mới của HenryVo!
