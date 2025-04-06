@@ -1,23 +1,30 @@
+{% comment %}
+  File: _layouts/category_page.html
+  Layout này định dạng cách hiển thị cho trang liệt kê bài viết
+  của một category cụ thể.
+{% endcomment %}
 ---
-layout: default # Sử dụng layout 'default' của theme hacker (hoặc layout phù hợp khác của theme)
+layout: default {% comment %} Kế thừa layout gốc của theme hacker {% endcomment %}
 ---
 
 <h1>Chủ đề: {{ page.category | capitalize }}</h1>
-<hr>
+<hr style="border-color: #333;">
 
 <ul class="post-list">
   {% assign category_posts = site.categories[page.category] %}
   {% if category_posts %}
-    {% for post in category_posts %}
+    {% comment %} Sắp xếp bài viết theo ngày giảm dần (mới nhất trước) {% endcomment %}
+    {% assign sorted_posts = category_posts | sort: 'date' | reverse %}
+    {% for post in sorted_posts %}
       <li>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> {# Định dạng ngày tháng #}
+        <span class="post-meta" style="color: #888;">{{ post.date | date: "%Y-%m-%d" }}</span>
       </li>
     {% endfor %}
   {% else %}
-    <li>Chưa có bài viết nào trong chủ đề này.</li>
+    <li>./ Chưa có bài viết nào trong chủ đề này_</li>
   {% endif %}
 </ul>
 
-<hr>
-<p><a href="{{ '/categories/' | relative_url }}">Xem tất cả các chủ đề</a></p>
+<hr style="border-color: #333;">
+<p><a href="{{ '/categories/' | relative_url }}">>> Xem tất cả các chủ đề</a></p>
