@@ -12,39 +12,41 @@
   </div>
 
   <nav class="sidebar-nav">
-    <ul>
-      <li>
-        <a href="{{ '/' | relative_url }}">
-          <i class="fa-fw fas fa-home menu-icon"></i> <span>HOME</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ '/categories/' | relative_url }}">
-          <i class="fa-fw fas fa-stream menu-icon"></i> <span>CATEGORIES</span>
-        </a>
-        {% comment %}
-          Khi nhấp vào CATEGORIES, nó sẽ dẫn đến trang /categories/
-          Trang /categories/ (file categories.md) sẽ liệt kê các chủ đề con
-          (Cloud, Microsoft, Linux, Dự Án, Tips...).
-          Người dùng sẽ nhấp vào link chủ đề con trên trang đó.
-        {% endcomment %}
-      </li>
-      <li>
-        <a href="#"> 
-          <i class="fa-fw fas fa-tags menu-icon"></i> <span>TAGS</span>
-        </a>
-      </li>
-       <li>
-        <a href="#"> 
-          <i class="fa-fw fas fa-archive menu-icon"></i> <span>ARCHIVES</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ '/about/' | relative_url }}">
-           <i class="fa-fw fas fa-info-circle menu-icon"></i> <span>ABOUT</span>
-        </a>
-      </li>
-    </ul>
+    <nav class="sidebar-nav">
+      <ul>
+        <li>
+          <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
+            <i class="fa-fw fas fa-home menu-icon"></i>
+            <span>HOME</span>
+          </a>
+        </li>
+        <li>
+          {% comment %} Highlight khi ở trang /categories/ hoặc trang con như /categories/cloud/ {% endcomment %}
+          <a href="{{ '/categories/' | relative_url }}" {% if page.url contains '/categories/' %}class="active"{% endif %}>
+            <i class="fa-fw fas fa-stream menu-icon"></i>
+            <span>CATEGORIES</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" {% if page.url contains '/tags/' %}class="active"{% endif %}> {# Cập nhật href khi có trang Tags #}
+            <i class="fa-fw fas fa-tags menu-icon"></i>
+            <span>TAGS</span>
+          </a>
+        </li>
+         <li>
+          <a href="#" {% if page.url contains '/archives/' %}class="active"{% endif %}> {# Cập nhật href khi có trang Archives #}
+            <i class="fa-fw fas fa-archive menu-icon"></i>
+            <span>ARCHIVES</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>
+             <i class="fa-fw fas fa-info-circle menu-icon"></i>
+            <span>ABOUT</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </nav>
 
   <div class="social-links">
