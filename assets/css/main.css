@@ -318,3 +318,93 @@ pre code {
 .sidebar-nav ul li a.active i.menu-icon {
    color: inherit; /* Lấy màu của thẻ a (sẽ thành màu xanh) */
 }
+/* ==========================================================================
+   11. Sidebar Left - Avatar & Menu Refinements
+   ========================================================================== */
+
+/* --- Khu vực Avatar / Info --- */
+.sidebar-left .site-info {
+  text-align: center; /* Căn giữa avatar, title, tagline */
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.sidebar-left .site-avatar {
+  margin-bottom: 15px;
+}
+
+.sidebar-left .avatar-img {
+  max-width: 100px; /* Chỉnh kích thước avatar tối đa */
+  border-radius: 50%; /* Bo tròn avatar */
+  border: 3px solid #fff; /* Thêm viền trắng nhỏ */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2); /* Đổ bóng nhẹ cho avatar */
+}
+
+.sidebar-left .site-title {
+  font-size: 1.5em; /* Có thể chỉnh lại */
+  margin-bottom: 5px;
+  display: block; /* Đảm bảo nó xuống dòng */
+}
+
+.sidebar-left .site-tagline {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+/* --- Menu dọc - Tinh chỉnh --- */
+.sidebar-nav ul li a {
+  padding: 10px 15px; /* Tăng padding dọc */
+  display: flex;
+  align-items: center;
+  color: #5a5a5a; /* Màu chữ hơi xám */
+  font-weight: 500;
+  border-radius: 6px; /* Bo góc nhiều hơn */
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a:focus {
+  background-color: #f1f3f5; /* Màu nền xám nhạt hơn khi hover */
+  color: #343a40; /* Màu chữ đậm hơn khi hover */
+  text-decoration: none;
+}
+
+/* Style cho mục menu đang active giống hình mẫu */
+.sidebar-nav ul li a.active {
+  background-color: #e9ecef; /* Màu nền xám đậm hơn cho active */
+  color: #212529; /* Màu chữ đen cho active */
+  font-weight: 600;
+}
+
+/* Icon trong menu */
+.sidebar-nav ul li a i.menu-icon {
+  margin-right: 12px; /* Khoảng cách icon và chữ */
+  width: 18px; /* Đảm bảo icon đủ rộng */
+  text-align: center;
+  color: #868e96; /* Màu icon mặc định */
+  font-size: 0.9em; /* Chỉnh cỡ icon nếu cần */
+}
+
+/* Đổi màu icon khi link active/hover */
+.sidebar-nav ul li a:hover i.menu-icon,
+.sidebar-nav ul li a:focus i.menu-icon,
+.sidebar-nav ul li a.active i.menu-icon {
+   color: inherit; /* Lấy màu của thẻ a cha */
+}
+
+/* --- Social Links (Ví dụ) --- */
+.social-links {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.social-links a {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 1.2em;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
