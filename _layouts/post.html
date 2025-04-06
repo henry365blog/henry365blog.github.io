@@ -1,0 +1,34 @@
+---
+# File: _layouts/post.html
+# Layout dùng cho các trang bài viết chi tiết trong _posts
+layout: default # Kế thừa layout 3 cột chung
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d/%m/%Y" }} {# Hoặc định dạng bạn thích: "%b %-d, %Y" #}
+      </time>
+      {% if page.categories.size > 0 %}
+        <span class="post-categories">
+          | Trong: {% for category in page.categories %}
+            <a href="/categories/{{ category | slugify }}/">{{ category | capitalize }}</a>
+            {% unless forloop.last %}, {% endunless %} {# Thêm dấu phẩy giữa các category #}
+          {% endfor %}
+        </span>
+      {% endif %}
+    </p>
+  </header>
+
+  <hr style="border-color: #ccc; margin: 2em 0;"> {# Đường kẻ phân cách #}
+
+  <div class="post-content">
+    {{ content }} {# Nội dung Markdown của bài viết sẽ vào đây #}
+  </div>
+
+  {% comment %} Có thể thêm phần bình luận hoặc link bài viết liên quan ở đây sau {% endcomment %}
+
+</article>
