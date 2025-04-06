@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: " en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% seo %} {# Plugin jekyll-seo-tag vẫn hữu ích #}
+<head>
+  {% comment %} --- Phần Head giữ nguyên như trước --- {% endcomment %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% include head-custom.html %}
+</head>
+<body>
+  {% comment %} --- Container chính sử dụng CSS Grid --- {% endcomment %}
+  <div class="site-container">
 
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    {% include head-custom.html %} {# Giữ lại nếu bạn có dùng #}
-  </head>
-  <body>
-    {% include header.html %}
+    {% include sidebar-left.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper"> {# Thêm class wrapper để tiện style sau này #}
-        {{ content }} {# Nội dung từ file .md sẽ được chèn vào đây #}
-      </div>
+    <main class="main-content-area" aria-label="Content">
+      {{ content }} {# Nội dung từ các file .md sẽ vào đây #}
     </main>
 
-    {% include footer.html %}
+    {% include sidebar-right.html %}
 
-  </body>
+  </div>
+
+  {% comment %} --- Footer có thể đặt ngoài container chính nếu muốn --- {% endcomment %}
+  {% include footer.html %} {# Giả định bạn có file footer #}
+
+</body>
 </html>
