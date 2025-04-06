@@ -32,7 +32,7 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
   {% assign posts_to_show = site.posts | where_exp: "post", "post.date <= site.time" %}
   {% comment %} Lọc các bài viết có ngày đăng <= thời điểm build site {% endcomment %}
 
-  {% for post in posts_to_show limit:5 %} {# Vẫn chỉ hiện 5 bài mới nhất #}
+  {% for post in posts_to_show limit:5 %} 
     <article class="post-card">
       <header class="post-card-header">
         <h3 class="post-card-title">
