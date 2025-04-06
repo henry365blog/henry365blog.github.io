@@ -1,5 +1,5 @@
 ---
-layout: page # Thử dùng layout 'page' của theme hacker. Nếu không ổn, thử đổi thành 'default'.
+layout: default # Thử dùng layout 'page' của theme hacker. Nếu không ổn, thử đổi thành 'default'.
 title: Trang Chủ # Tiêu đề hiển thị trên tab trình duyệt (tùy chọn)
 ---
 
