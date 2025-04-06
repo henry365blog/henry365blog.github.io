@@ -238,3 +238,83 @@ pre code {
    .sidebar-nav ul { text-align: center; } /* Căn giữa menu */
    .sidebar-nav ul li { display: inline-block; margin: 5px 10px; } /* Menu ngang trên mobile */
 }
+/* ==========================================================================
+   10. Sidebar Left & Navigation - Styling Details
+   ========================================================================== */
+
+/* --- Khu vực thông tin Site (Logo/Title/Tagline) --- */
+.sidebar-left .site-info {
+  padding-bottom: 20px; /* Khoảng cách dưới khu vực info */
+  margin-bottom: 20px; /* Khoảng cách dưới đường kẻ */
+  border-bottom: 1px solid #e9ecef; /* Thêm đường kẻ phân cách nhẹ */
+  text-align: center; /* Thử căn giữa nếu không có logo */
+}
+
+/* Nếu sau này bạn thêm logo dạng ảnh */
+.sidebar-left .site-info img.site-logo {
+  max-width: 80px; /* Giới hạn kích thước logo */
+  margin: 0 auto 15px auto; /* Căn giữa logo và tạo khoảng cách dưới */
+  border-radius: 50%; /* Bo tròn nếu là logo tròn */
+}
+
+.sidebar-left .site-info .site-title {
+  font-size: 1.4em; /* Giảm nhẹ cỡ chữ title */
+  margin-bottom: 5px; /* Giảm khoảng cách dưới title */
+  color: #343a40;
+}
+
+.sidebar-left .site-info .site-tagline {
+  font-size: 0.85em;
+  margin-bottom: 0; /* Bỏ khoảng cách dưới tagline */
+  color: #6c757d;
+}
+
+/* --- Menu dọc Sidebar --- */
+.sidebar-nav ul {
+  /* Giữ list-style: none; từ phần CSS Base */
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 5px; /* Giảm khoảng cách giữa các mục menu */
+}
+
+.sidebar-nav ul li a {
+  padding: 8px 15px; /* Thêm padding để vùng click lớn hơn */
+  border-radius: 5px; /* Bo góc nhẹ cho link */
+  display: flex; /* Sử dụng flex để căn chỉnh icon và text (nếu có icon sau này) */
+  align-items: center; /* Căn giữa icon và text theo chiều dọc */
+  font-weight: 500;
+  color: #495057; /* Màu chữ menu gốc */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Hiệu ứng mượt */
+}
+
+/* Hiệu ứng khi rê chuột (Hover) */
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a:focus {
+  background-color: #eef2f7; /* Màu nền rất nhạt khi hover */
+  color: #007bff; /* Đổi màu chữ khi hover */
+  text-decoration: none; /* Đảm bảo không có gạch chân */
+}
+
+/* Style cho mục menu đang active (cần thêm class="active" vào thẻ <a> bằng Liquid sau này) */
+.sidebar-nav ul li a.active {
+  background-color: #ddeeff; /* Màu nền khác biệt cho mục active */
+  color: #0056b3;
+  font-weight: 600; /* Đậm hơn */
+}
+
+/* --- CSS chuẩn bị cho Icons (Nếu sau này bạn muốn thêm) --- */
+.sidebar-nav ul li a i.menu-icon {
+  margin-right: 10px; /* Khoảng cách giữa icon và chữ */
+  width: 16px; /* Đặt chiều rộng cố định cho icon nếu cần căn chỉnh */
+  text-align: center; /* Căn giữa icon nếu dùng icon font */
+  color: #6c757d; /* Màu icon mặc định */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Đổi màu icon khi hover link cha */
+.sidebar-nav ul li a:hover i.menu-icon,
+.sidebar-nav ul li a:focus i.menu-icon,
+.sidebar-nav ul li a.active i.menu-icon {
+   color: inherit; /* Lấy màu của thẻ a (sẽ thành màu xanh) */
+}
