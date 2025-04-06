@@ -408,3 +408,91 @@ pre code {
 .social-links a:hover {
   color: #007bff;
 }
+/* ==========================================================================
+   13. Homepage Post Card Styling (Định dạng thẻ bài viết trang chủ)
+   ========================================================================== */
+
+.post-card-list {
+  margin-top: 1.5em;
+  /* CSS cho container nếu cần, ví dụ dùng Grid để chia cột card sau này */
+}
+
+.post-card {
+  background-color: #ffffff; /* Nền trắng cho card */
+  border: 1px solid #dee2e6; /* Viền xám rất nhạt */
+  border-radius: 8px; /* Bo góc giống các cột */
+  padding: 20px 25px; /* Padding bên trong card */
+  margin-bottom: 30px; /* Khoảng cách giữa các card */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Đổ bóng rất nhẹ */
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng nhẹ khi hover card */
+.post-card:hover {
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+   transform: translateY(-3px);
+}
+
+.post-card-header {
+  margin-bottom: 15px; /* Khoảng cách dưới phần header của card */
+}
+
+.post-card-title {
+  font-size: 1.35em; /* Cỡ chữ tiêu đề card */
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.post-card-title a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.post-card-title a:hover {
+  color: #007bff;
+  text-decoration: none; /* Bỏ gạch chân hover của link chung */
+}
+
+.post-card-meta {
+  font-size: 0.8em; /* Cỡ chữ nhỏ hơn cho ngày tháng, category */
+  color: #6c757d;
+  margin-bottom: 15px; /* Khoảng cách dưới meta */
+}
+
+.post-card-meta a {
+  color: #6c757d;
+  text-decoration: none; /* Bỏ gạch chân link category */
+  border-bottom: 1px dotted #999; /* Thêm gạch chân kiểu chấm */
+}
+
+.post-card-meta a:hover {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.post-card-excerpt {
+  color: #495057; /* Màu chữ đoạn trích */
+  font-size: 0.98em; /* Cỡ chữ đoạn trích */
+  line-height: 1.7; /* Giãn dòng đoạn trích */
+}
+
+/* Xóa margin dưới của đoạn văn cuối cùng trong excerpt */
+.post-card-excerpt p:last-child {
+   margin-bottom: 0;
+}
+
+/* Optional: Footer for 'Read More' link */
+/*
+.post-card-footer {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 0.9em;
+}
+.post-card-footer a {
+   font-weight: 600;
+   color: #007bff;
+}
+.post-card-footer a:hover {
+   color: #0056b3;
+}
+*/
