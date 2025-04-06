@@ -3,6 +3,7 @@ layout: post
 title:  "Lời chào từ HenryVo - Chào mừng bạn đến với Blog Công nghệ!"
 date:   2025-04-06 15:53:00 +0700 # Sử dụng ngày giờ hiện tại hoặc ngày bạn muốn đăng
 categories: [gioi-thieu] # Giữ category này để phân loại
+permalink: /categories/gioi-thieu/
 ---
 
 Xin chào tất cả các bạn!
