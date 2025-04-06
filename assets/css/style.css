@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+# CSS cho Menu Điều hướng (Thêm vào assets/css/style.css)
+--------------------------------------------------------------*/
+
+/* CSS cho menu trên màn hình lớn */
+.site-nav .nav-list {
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+  padding: 0;
+  margin: 0; /* Bỏ margin mặc định của ul */
+}
+
+.site-nav .nav-list li {
+  display: inline-block; /* Hiển thị các mục trên cùng một hàng */
+  margin-left: 15px; /* Khoảng cách giữa các mục menu */
+}
+
+.site-nav .nav-list li a {
+  color: #eee; /* Màu chữ menu (sáng) */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-family: monospace; /* Giữ font của theme */
+  font-size: 0.95em; /* Chỉnh cỡ chữ nếu cần */
+  transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+/* Hiệu ứng khi rê chuột vào link menu */
+.site-nav .nav-list li a:hover,
+.site-nav .nav-list li a:focus {
+  color: #0f0; /* Màu xanh lá cây đặc trưng */
+  /* text-decoration: underline; Bỏ gạch chân khi hover nếu muốn */
+}
+
+/* Căn chỉnh header để title và nav nằm trên cùng hàng */
+/* Đoạn này có thể cần hoặc không tùy thuộc vào cấu trúc gốc của header theme hacker */
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between; /* Đẩy title sang trái, nav sang phải */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 10px 0; /* Thêm padding trên dưới cho header */
+}
+
+
+/* --- CSS Responsive cho menu trên màn hình nhỏ --- */
+@media screen and (max-width: 650px) { /* Điều chỉnh breakpoint nếu cần */
+  .site-header .wrapper {
+     flex-direction: column; /* Chuyển sang cột */
+     align-items: flex-start; /* Căn trái các phần tử */
+  }
+
+  .site-nav {
+    margin-top: 10px; /* Khoảng cách giữa title và nav */
+    width: 100%; /* Chiếm hết chiều rộng */
+  }
+
+  .site-nav .nav-list {
+    text-align: center; /* Căn giữa các mục menu */
+  }
+
+  .site-nav .nav-list li {
+    display: inline-block; /* Vẫn giữ inline nhưng có thể xuống hàng nếu không đủ chỗ */
+    margin: 5px 8px; /* Giảm khoảng cách ngang, thêm khoảng cách dọc */
+  }
+}
