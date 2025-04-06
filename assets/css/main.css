@@ -1,1 +1,139 @@
+/* --- CSS Reset cơ bản --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Màu nền sáng nhẹ */
+  color: #343a40; /* Màu chữ chính */
+}
+
+/* --- Cấu trúc Grid Layout --- */
+.site-container {
+  display: grid;
+  /* Định nghĩa 3 cột: Sidebar trái 240px, Nội dung chính tự co giãn, Sidebar phải 200px */
+  grid-template-columns: 240px 1fr 200px;
+  grid-template-areas: "sidebar-left main-content sidebar-right"; /* Đặt tên cho các khu vực */
+  gap: 20px; /* Khoảng cách giữa các cột */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  margin: 20px auto; /* Căn giữa layout và tạo khoảng cách trên dưới */
+  padding: 0 15px; /* Padding hai bên */
+}
+
+/* Gán các phần tử vào đúng khu vực grid */
+.sidebar-left { grid-area: sidebar-left; }
+.main-content-area { grid-area: main-content; }
+.sidebar-right { grid-area: sidebar-right; }
+
+/* --- Định dạng Sidebar Trái --- */
+.sidebar-left {
+  background-color: #fff; /* Nền trắng */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  /* Có thể thêm position: sticky; top: 20px; để nó cố định khi cuộn */
+}
+
+.sidebar-left .site-info .site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #343a40;
+  text-decoration: none;
+  display: block; /* Để chiếm cả dòng */
+  margin-bottom: 5px;
+}
+
+.sidebar-left .site-info .site-tagline {
+  font-size: 0.9em;
+  color: #6c757d; /* Màu xám */
+  margin-bottom: 25px;
+}
+
+/* Định dạng Menu dọc */
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: #495057; /* Màu link menu */
+  font-weight: 500;
+  display: block; /* Chiếm cả dòng để dễ click */
+  padding: 5px 0;
+  transition: color 0.2s ease;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active { /* Thêm class active sau này nếu cần */
+  color: #007bff; /* Màu khi hover hoặc active */
+}
+
+/* --- Định dạng Nội dung chính (Tạm thời) --- */
+.main-content-area {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* --- Định dạng Sidebar Phải (Tạm thời) --- */
+.sidebar-right {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 0.9em;
+  /* Có thể thêm position: sticky; top: 20px; */
+}
+.sidebar-right .widget {
+  margin-bottom: 25px;
+}
+.sidebar-right h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* --- Responsive cơ bản cho màn hình nhỏ --- */
+@media screen and (max-width: 992px) { /* Ví dụ cho tablet */
+  .site-container {
+    /* Chuyển thành 2 cột: sidebar trái và nội dung */
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "sidebar-left main-content"
+      "sidebar-left sidebar-right"; /* Đẩy sidebar phải xuống dưới */
+    max-width: 95%;
+  }
+   .sidebar-right {
+      margin-top: 20px; /* Khoảng cách khi bị đẩy xuống */
+   }
+}
+
+@media screen and (max-width: 768px) { /* Ví dụ cho mobile */
+  .site-container {
+    /* Chuyển thành 1 cột */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sidebar-left"
+      "main-content"
+      "sidebar-right";
+     gap: 15px;
+     margin: 15px auto;
+  }
+  .sidebar-left, .main-content-area, .sidebar-right {
+      /* Bỏ sticky nếu có */
+      position: static;
+  }
+   .sidebar-right {
+      margin-top: 0; /* Reset margin */
+   }
+}
