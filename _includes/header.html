@@ -1,0 +1,26 @@
+{% comment %}
+  File: _includes/header.html
+  Ghi đè file header gốc của theme để thêm menu.
+{% endcomment %}
+<header class="site-header">
+  <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+
+    <div class="site-title">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        ./ {{ site.title | default: site.github.repository_name }}
+      </a>
+      </div>
+
+    <nav class="site-nav">
+      <ul class="nav-list">
+        {% comment %} Các mục menu {% endcomment %}
+        <li><a href="{{ '/' | relative_url }}">./Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">./Giới_thiệu</a></li>
+        <li><a href="{{ '/categories/cloud/' | relative_url }}">./Cloud</a></li>
+        <li><a href="{{ '/categories/linux/' | relative_url }}">./Linux</a></li>
+        <li><a href="{{ '/categories/' | relative_url }}">./Chủ_đề</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
