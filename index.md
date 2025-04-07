@@ -21,10 +21,12 @@ Mục tiêu của tôi là biến blog này thành một nguồn tài nguyên gi
 
 Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ngại để lại bình luận hay câu hỏi nhé. Sự tương tác của các bạn chính là động lực lớn nhất cho tôi!
 
-<hr style="border-color: #333;"> ## Danh mục các chủ đề
+<hr style="border-color: #333;"> 
+## Danh mục các chủ đề
 * Để xem tất cả các chủ đề, hãy truy cập trang [Chủ đề]({{ '/categories/' | relative_url }}).*
 
-<hr style="border-color: #333;"> ## Bài viết mới
+<hr style="border-color: #333;"> 
+## Bài viết mới
 
 {% comment %} Container cho danh sách thẻ bài viết {% endcomment %}
 <div class="post-card-list">
@@ -55,12 +57,14 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
       </header>
       <div class="post-card-excerpt">
         {% if post.excerpt %}
-          {{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 40 }} {# Hiển thị khoảng 40 từ đầu tiên của excerpt #}
-        {% else %}
-          {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }} {# Nếu không có excerpt, lấy từ content #}
+        {% comment %} Hiển thị khoảng 40 từ đầu tiên của excerpt {% endcomment %}
+          {{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 40 }} 
+        {% else %} {% comment %} Nếu không có excerpt, lấy từ content {% endcomment %}
+          {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }} 
         {% endif %}
       </div>
-      </article> {# Kết thúc một thẻ bài viết #}
+      </article> 
+      {% comment %} {Kết thúc một thẻ bài viết{% endcomment %}
   {% endfor %} {# Kết thúc vòng lặp bài viết #}
 
 </div> {# Kết thúc danh sách thẻ bài viết #}
@@ -78,7 +82,8 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
   {% endfor %}
 </ul>
 
-<hr style="border-color: #333;"> ## ./ Danh mục bài viết cũ
+<hr style="border-color: #333;"> 
+## Danh mục bài viết cũ
 
 <p><a href="{{ '/archive/' | relative_url }}">>> Xem tất cả bài viết...</a></p> <hr style="border-color: #333;"> Một lần nữa, chào mừng bạn đến với Blog của HenryVo!
 
