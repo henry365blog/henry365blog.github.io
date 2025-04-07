@@ -21,10 +21,10 @@ Mục tiêu của tôi là biến blog này thành một nguồn tài nguyên gi
 
 Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ngại để lại bình luận hay câu hỏi nhé. Sự tương tác của các bạn chính là động lực lớn nhất cho tôi!
 
-<hr style="border-color: #333;"> ## ./Danh mục các chủ đề
+<hr style="border-color: #333;"> ## Danh mục các chủ đề
 * Để xem tất cả các chủ đề, hãy truy cập trang [Chủ đề]({{ '/categories/' | relative_url }}).*
 
-<hr style="border-color: #333;"> ## ./ Bài viết mới_
+<hr style="border-color: #333;"> ## Bài viết mới
 
 {% comment %} Container cho danh sách thẻ bài viết {% endcomment %}
 <div class="post-card-list">
