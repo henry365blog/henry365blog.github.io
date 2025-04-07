@@ -21,11 +21,18 @@ Mục tiêu của tôi là biến blog này thành một nguồn tài nguyên gi
 
 Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ngại để lại bình luận hay câu hỏi nhé. Sự tương tác của các bạn chính là động lực lớn nhất cho tôi!
 
-<hr style="border-color: #333;"> 
+<hr style="border-color: #333;">
+
+{% comment %} ## PHẢI nằm ở dòng mới, sau một dòng trống {% endcomment %}
+
 ## Danh mục các chủ đề
+
 * Để xem tất cả các chủ đề, hãy truy cập trang [Chủ đề]({{ '/categories/' | relative_url }}).*
 
-<hr style="border-color: #333;"> 
+<hr style="border-color: #333;">
+
+{% comment %} ## PHẢI nằm ở dòng mới, sau một dòng trống {% endcomment %}
+
 ## Bài viết mới
 
 {% comment %} Container cho danh sách thẻ bài viết {% endcomment %}
@@ -34,7 +41,7 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
   {% assign posts_to_show = site.posts | where_exp: "post", "post.date <= site.time" %}
   {% comment %} Lọc các bài viết có ngày đăng <= thời điểm build site {% endcomment %}
 
-  {% for post in posts_to_show limit:5 %} 
+  {% for post in posts_to_show limit:5 %}
     <article class="post-card">
       <header class="post-card-header">
         <h3 class="post-card-title">
@@ -42,50 +49,35 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
         </h3>
         <div class="post-card-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}" class="post-card-date">
-            {{ post.date | date: "%d/%m/%Y" }} {# Hoặc định dạng bạn thích #}
-          </time>
+            {{ post.date | date: "%d/%m/%Y" }} </time>
           {% if post.categories.size > 0 %}
           <span class="post-card-categories">
             | Trong:
             {% for category in post.categories %}
               <a href="/categories/{{ category | slugify }}/">{{ category | capitalize }}</a>
-              {% unless forloop.last %}, {% endunless %} {# Dấu phẩy giữa các category #}
-            {% endfor %}
+              {% unless forloop.last %}, {% endunless %} {% endfor %}
           </span>
           {% endif %}
         </div>
       </header>
       <div class="post-card-excerpt">
         {% if post.excerpt %}
-        {% comment %} Hiển thị khoảng 40 từ đầu tiên của excerpt {% endcomment %}
-          {{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 40 }} 
-        {% else %} {% comment %} Nếu không có excerpt, lấy từ content {% endcomment %}
-          {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }} 
-        {% endif %}
+          {{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 40 }} {% else %}
+          {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }} {% endif %}
       </div>
-      </article> 
-      {% comment %} {Kết thúc một thẻ bài viết{% endcomment %}
-  {% endfor %} {# Kết thúc vòng lặp bài viết #}
+    </article> {% endfor %} </div> <hr style="border-color: #ccc; margin: 2em 0;">
 
-</div> {# Kết thúc danh sách thẻ bài viết #}
+{% comment %} ## PHẢI nằm ở dòng mới, sau một dòng trống + Xóa ./ {% endcomment %}
 
-{% comment %} Giữ lại phần link Archive nếu bạn có dùng {% endcomment %}
-<hr style="border-color: #ccc; margin: 2em 0;">
-## ./ Danh mục bài viết cũ
-<p><a href="{{ '/archive/' | relative_url }}">>> Xem tất cả bài viết...</a></p>
-
-<ul class="post-list">
-  {% for post in site.posts limit:5 %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> » <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-<hr style="border-color: #333;"> 
 ## Danh mục bài viết cũ
 
-<p><a href="{{ '/archive/' | relative_url }}">>> Xem tất cả bài viết...</a></p> <hr style="border-color: #333;"> Một lần nữa, chào mừng bạn đến với Blog của HenryVo!
+<p><a href="{{ '/archive/' | relative_url }}">>> Xem tất cả bài viết...</a></p> {# Link này cần trang /archive/ tồn tại #}
+
+{% comment %} Đã xóa bỏ đoạn UL bài viết cũ bị lặp ở đây {% endcomment %}
+
+<hr style="border-color: #333;">
+
+Một lần nữa, chào mừng bạn đến với Blog của HenryVo!
 
 Trân trọng
 HenryVo
