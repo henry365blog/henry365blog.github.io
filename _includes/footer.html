@@ -1,5 +1,48 @@
+{% comment %} File: _includes/footer.html (Corrected Comments) {% endcomment %}
 <footer class="site-footer">
-  <div class="wrapper">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: "My Blog" }}.</p>
-    </div>
-</footer>
+  <div class="wrapper"> <div class="footer-columns">
+
+      <div class="footer-col footer-col-1">
+        <h3>Liên hệ &amp; Mạng xã hội</h3>
+        <ul class="contact-list">
+          <li>
+             <a href="tel:+84123456789">
+              <i class="fas fa-phone fa-fw"></i> <span>+84 123 456 789</span> </a>
+          </li>
+          <li>
+             <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin fa-fw"></i> <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+             <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-square fa-fw"></i> <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-link fa-fw"></i> <span>Mạng xã hội khác 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-link fa-fw"></i> <span>Mạng xã hội khác 2</span>
+            </a>
+          </li>
+        </ul>
+      </div> <div class="footer-col footer-col-2">
+        <h3>Liên kết nhanh</h3>
+        <ul class="footer-nav">
+          <li><a href="{{ '/' | relative_url }}">Trang chủ</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">Giới thiệu</a></li>
+          <li><a href="{{ '/categories/' | relative_url }}">Chủ đề</a></li>
+          </ul>
+      </div> <div class="footer-col footer-col-3">
+        <h3>Đăng ký nhận tin</h3>
+        <p>Nhận các bài viết mới nhất qua email.</p>
+        <form action="#" method="post" class="newsletter-form">
+            <input type="email" placeholder="Nhập email của bạn..." disabled>
+            <button type="submit" disabled>Đăng ký</button>
+        </form>
+        <p style="font-size: 0.8em; color: #999;"></p>
+      </div> </div> <div class="footer-copyright">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: "My Blog" }}.</p>
+      </div> </div> </footer>

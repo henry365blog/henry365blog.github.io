@@ -3,11 +3,11 @@ layout: default
 title: Trang Chủ
 ---
 
-**Lời chào từ HenryVo - Chào mừng bạn đến với Blog Công nghệ!**
+**Lời chào từ Henry Vo - Chào mừng bạn đến với Blog Công nghệ!**
 
 Xin chào tất cả các bạn!
 
-Tôi là HenryVo, và tôi rất vui mừng chào đón bạn đến với không gian chia sẻ kiến thức và đam mê công nghệ của mình - Blog của HenryVo.
+Tôi là Henry Vo, và tôi rất vui mừng chào đón bạn đến với không gian chia sẻ kiến thức và đam mê công nghệ của mình - Blog của HenryVo.
 
 Trong thế giới công nghệ thông tin không ngừng biến đổi, việc cập nhật kiến thức, khám phá các giải pháp mới và tìm hiểu những ý tưởng sáng tạo là điều vô cùng cần thiết. Đó chính là lý do tôi tạo ra blog này: để cùng nhau khám phá, học hỏi và chia sẻ những kinh nghiệm thực tế trong lĩnh vực IT.
 
@@ -40,8 +40,8 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
 
   {% assign posts_to_show = site.posts | where_exp: "post", "post.date <= site.time" %}
   {% comment %} Lọc các bài viết có ngày đăng <= thời điểm build site {% endcomment %}
-
-  {% for post in posts_to_show limit:5 %}
+  {% comment %} Vẫn chỉ hiện 5 bài mới nhất {% endcomment %}
+  {% for post in posts_to_show limit:5 %} 
     <article class="post-card">
       <header class="post-card-header">
         <h3 class="post-card-title">
@@ -65,9 +65,8 @@ Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ng�
           {{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 40 }} {% else %}
           {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }} {% endif %}
       </div>
-    </article> {% endfor %} </div> <hr style="border-color: #ccc; margin: 2em 0;">
-
-{% comment %} ## PHẢI nằm ở dòng mới, sau một dòng trống + Xóa ./ {% endcomment %}
+      </article> {% endfor %} </div> ```
+* **Thay đổi:** Chúng ta dùng `<article class="post-card">` cho mỗi bài, bên trong có các `div` và thẻ `h3`, `time`, `span` với các class cụ thể (`post-card-header`, `post-card-title`, `post-card-meta`, `post-card-excerpt`) để dễ dàng định dạng bằng CSS. Chúng ta cũng thêm phần hiển thị đoạn trích ngắn (`post.excerpt`).
 
 ## Danh mục bài viết cũ
 

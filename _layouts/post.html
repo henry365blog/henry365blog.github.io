@@ -1,34 +1,38 @@
 ---
 # File: _layouts/post.html
 # Layout dùng cho các trang bài viết chi tiết trong _posts
-layout: default # Kế thừa layout 3 cột chung
+layout: default
+# Kế thừa layout 3 cột chung (default.html)
 ---
 
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: "%d/%m/%Y" }} {# Hoặc định dạng bạn thích: "%b %-d, %Y" #}
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%d/%m/%Y" }}
       </time>
       {% if page.categories.size > 0 %}
-        <span class="post-categories">
-          | Trong: {% for category in page.categories %}
-            <a href="/categories/{{ category | slugify }}/">{{ category | capitalize }}</a>
-            {% unless forloop.last %}, {% endunless %} {# Thêm dấu phẩy giữa các category #}
-          {% endfor %}
-        </span>
+      <span class="post-categories" itemprop="keywords">
+         | Trong:
+        {% for category in page.categories %}
+          <a href="/categories/{{ category | slugify }}/">{{ category | capitalize }}</a>
+          {% unless forloop.last %},{% endunless %} {% endfor %}
+      </span>
       {% endif %}
     </p>
   </header>
 
-  <hr style="border-color: #ccc; margin: 2em 0;"> {# Đường kẻ phân cách #}
+  <hr style="border-color: #ccc; margin: 2em 0;"> <div class="post-content" itemprop="articleBody">
+    {{ content }} </div>
 
-  <div class="post-content">
-    {{ content }} {# Nội dung Markdown của bài viết sẽ vào đây #}
-  </div>
-
-  {% comment %} Có thể thêm phần bình luận hoặc link bài viết liên quan ở đây sau {% endcomment %}
+  {% comment %}
+    Phần tùy chọn:
+    - Chia sẻ mạng xã hội
+    - Bài viết liên quan
+    - Hệ thống bình luận (Disqus, etc.)
+    Sẽ thêm sau nếu bạn muốn.
+  {% endcomment %}
 
 </article>

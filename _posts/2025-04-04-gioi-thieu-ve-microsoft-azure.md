@@ -3,6 +3,7 @@ layout: post
 title: "Giới thiệu tổng quan về Microsoft Azure"
 date: 2025-04-04 10:30:00 +0700
 categories: [cloud, microsoft] # Gán vào cả category Cloud và Microsoft
+tags: [azure, vm, iaas, basic, infrastructure]
 ---
 
 Chào mừng các bạn đến với loạt bài tìm hiểu về Microsoft Azure!

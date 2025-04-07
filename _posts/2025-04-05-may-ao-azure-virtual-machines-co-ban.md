@@ -3,6 +3,7 @@ layout: post
 title: "Máy ảo Azure (Virtual Machines) - Khái niệm cơ bản"
 date: 2025-04-05 11:15:00 +0700
 categories: [cloud, microsoft]
+tags: [azure, vm, iaas, basic, infrastructure]
 ---
 
 Một trong những dịch vụ nền tảng và được sử dụng nhiều nhất trên Azure chính là **Azure Virtual Machines (VMs)**. Đây là một dịch vụ thuộc nhóm IaaS (Infrastructure as a Service).

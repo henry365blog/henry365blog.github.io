@@ -1,19 +1,48 @@
-{% comment %} File: _includes/sidebar-right.html {% endcomment %}
+{% comment %} File: _includes/sidebar-right.html (Updated for Recent Posts) {% endcomment %}
 <aside class="sidebar sidebar-right">
 
-  <section class="widget">
+  <section class="widget widget-search">
     <h4>Tìm kiếm</h4>
     <p>(Search placeholder)</p>
+    {% comment %} TODO: Implement search later {% endcomment %}
   </section>
 
-  <section class="widget">
+  <section class="widget widget-recent-posts">
     <h4>Bài viết mới</h4>
-    <p>(Recent posts placeholder)</p>
+    {% comment %} --- DANH SÁCH BÀI VIẾT MỚI --- {% endcomment %}
+    <ul>
+      {% comment %} Lấy tất cả bài viết, lọc bỏ bài tương lai nếu có {% endcomment %}
+      {% assign recent_posts = site.posts | where_exp: "post", "post.date <= site.time" %}
+      {% comment %} Lặp qua 5 bài đầu tiên (mới nhất) {% endcomment %}
+      {% for post in recent_posts limit:5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {% comment %} Tùy chọn: Hiển thị ngày đăng bên dưới tiêu đề {% endcomment %}
+          </li>
+      {% endfor %}
+    </ul>
+    {% comment %} --- KẾT THÚC DANH SÁCH --- {% endcomment %}
   </section>
-
-  <section class="widget">
+  
+  <section class="widget widget-tags">
     <h4>Tags phổ biến</h4>
-    <p>(Tags placeholder)</p>
+    {% comment %} --- TAG LIST START --- {% endcomment %}
+    {% comment %} Lấy danh sách tags từ site và sắp xếp theo tên {% endcomment %}
+    {% assign tags = site.tags | sort %}
+    {% if tags.size > 0 %}
+      <div class="tag-cloud">
+        {% for tag_pair in tags %}
+          {% assign tag_name = tag_pair | first %}
+          {% assign tag_posts = tag_pair | last %}
+          {% assign tag_size = tag_posts | size %}
+          <a href="/tags/#{{ tag_name | slugify }}" class="tag-link" title="{{ tag_size }} bài viết gắn tag '{{ tag_name }}'">
+            {{ tag_name }} <span class="tag-count">{{ tag_size }}</span> </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>Chưa có tags nào được sử dụng.</p>
+    {% endif %}
+    {% comment %} --- TAG LIST END --- {% endcomment %}
   </section>
 
 </aside>

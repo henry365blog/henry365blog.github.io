@@ -3,6 +3,7 @@ layout: post
 title: "Triển khai Web App đơn giản với Azure App Service"
 date: 2025-04-06 15:00:00 +0700
 categories: [cloud, microsoft]
+tags: [azure, vm, iaas, basic, infrastructure]
 ---
 
 Nếu bạn cần host một ứng dụng web hoặc API mà không muốn bận tâm nhiều đến việc quản lý máy chủ, hệ điều hành, thì **Azure App Service** là một lựa chọn tuyệt vời. Đây là một dịch vụ PaaS (Platform as a Service) mạnh mẽ của Azure.
@@ -28,5 +29,6 @@ Azure App Service là một nền tảng được quản lý hoàn toàn để x
 * Các ứng dụng cần khả năng mở rộng linh hoạt và không muốn quản lý máy chủ.
 
 Triển khai lên App Service rất đơn giản, bạn có thể đẩy code trực tiếp từ Git, Visual Studio, hoặc dùng các công cụ dòng lệnh. Đây là dịch vụ PaaS hàng đầu giúp tăng tốc độ phát triển và đơn giản hóa vận hành ứng dụng web.
+
 ------------
 **Henry Blog 365**

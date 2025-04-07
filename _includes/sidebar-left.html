@@ -28,15 +28,13 @@
           </a>
         </li>
         <li>
-          {% comment %} Cập nhật href khi có trang Tags {% endcomment %}
-          <a href="#" {% if page.url contains '/tags/' %}class="active"{% endif %}> 
+          <a href="{{ '/tags/' | relative_url }}" {% if page.url contains '/tags/' %}class="active"{% endif %}>
             <i class="fa-fw fas fa-tags menu-icon"></i>
             <span>TAGS</span>
           </a>
         </li>
-         <li>
-           {% comment %} Cập nhật href khi có trang archives {% endcomment %}
-          <a href="#" {% if page.url contains '/archives/' %}class="active"{% endif %}> 
+        <li>
+          <a href="{{ '/archives/' | relative_url }}" {% if page.url contains '/archives/' %}class="active"{% endif %}>
             <i class="fa-fw fas fa-archive menu-icon"></i>
             <span>ARCHIVES</span>
           </a>

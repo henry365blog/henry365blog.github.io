@@ -28,5 +28,6 @@ Tuy nhiên, khi nói đến "Linux" mà chúng ta thường sử dụng, chúng 
 * **Mạnh mẽ cho lập trình viên và quản trị hệ thống:** Cung cấp môi trường dòng lệnh mạnh mẽ và nhiều công cụ phát triển.
 
 Linux là một phần quan trọng của thế giới công nghệ hiện đại, vận hành phần lớn các máy chủ web, siêu máy tính và nhiều thiết bị thông minh quanh ta.
+
 -------------
 **Henry Blog 365**
