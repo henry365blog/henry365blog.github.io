@@ -1,2 +1,31 @@
-title: Blog của HenryVo        
+title: !!! HENRY BLOG 365 !!!
 description: Chia sẻ kiến thức và kinh nghiệm IT.
+
+# === CẤU HÌNH PLUGIN ===
+plugins:
+  - jekyll-feed        # Plugin RSS feed
+  - jekyll-seo-tag     # Plugin SEO
+  - jekyll-archives    # Plugin tạo trang lưu trữ
+
+# === NGÔN NGỮ ===
+# Chỉ sử dụng tiếng Việt
+languages:
+  - vi
+default_lang: vi
+
+# === CẤU HÌNH CHO JEKYLL-ARCHIVES ===
+jekyll-archives:
+  enabled:
+  #  - categories      # Bật tính năng tạo trang lưu trữ cho categories
+  #  - tags            # Bật tính năng tạo trang lưu trữ cho tags
+  layouts:
+  #  category: category_archive  # Layout cho trang category
+  #  tag: tag_archive            # Layout cho trang tag
+  permalinks:
+  #  category: /categories/:name/ # Định dạng URL cho category
+  #  tag: /tags/:name/            # Định dạng URL cho tag
+
+# === CÁC CẤU HÌNH KHÁC ===
+markdown: kramdown
+theme: minima
+permalink: /:categories/:title/

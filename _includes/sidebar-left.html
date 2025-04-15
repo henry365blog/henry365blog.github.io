@@ -1,7 +1,6 @@
 {% comment %} File: _includes/sidebar-left.html (Updated) {% endcomment %}
 <aside class="sidebar sidebar-left">
-
-  <div class="site-info">
+    <div class="site-info">
     <div class="site-avatar">
       <a href="{{ "/" | relative_url }}">
         <img src="/assets/images/placeholder-avatar.jpg" alt="Avatar" class="avatar-img">
@@ -52,5 +51,12 @@
   <div class="social-links">
      <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
      </div>
+<!-- Menu chọn ngôn ngữ -->
+<div class="language-selector" style="text-align: center; margin-top: 15px;">
+  <select id="language-selector">
+    <option value="en">English</option>
+    <option value="vi">Tiếng Việt</option>
+  </select>
+</div>
 
 </aside>

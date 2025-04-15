@@ -1142,3 +1142,161 @@ body {
   /* Kế thừa style link chung */
   font-weight: 500; /* Đậm vừa cho tiêu đề bài viết */
 }
+
+/* ==========================================================================
+   22. Categories Page Styling (Trang danh sách chủ đề)
+   ========================================================================== */
+
+   .category-list {
+    list-style: none; /* Bỏ dấu chấm đầu dòng */
+    padding-left: 0;
+    margin-top: 1.5em;
+    display: grid; /* Sử dụng Grid Layout */
+    /* Tạo các cột có chiều rộng tối thiểu 250px, tự động lấp đầy */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Khoảng cách giữa các ô category */
+  }
+  
+  .category-list-item {
+     background-color: #ffffff; /* Nền trắng */
+     border: 1px solid #e9ecef; /* Viền xám nhạt */
+     border-radius: 6px; /* Bo góc */
+     transition: all 0.2s ease-in-out; /* Hiệu ứng chuyển động */
+     /* Thêm viền trái giống post card cho đồng bộ */
+     border-left: 4px solid #e9ecef;
+     margin-bottom: 0; /* Bỏ margin-bottom mặc định của li khi dùng grid gap */
+  }
+  
+  /* Hiệu ứng khi di chuột vào một ô category */
+  .category-list-item:hover {
+     transform: translateY(-3px); /* Nâng nhẹ lên */
+     box-shadow: 0 5px 12px rgba(0,0,0,0.08); /* Đổ bóng rõ hơn */
+     border-left-color: #007bff; /* Đổi màu viền trái thành xanh */
+  }
+  
+  /* Định dạng thẻ <a> bên trong mỗi ô */
+  .category-list-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px; /* Giữ nguyên hoặc điều chỉnh nếu cần */
+    text-decoration: none;
+    color: #343a40;
+    font-weight: 600; /* Giữ nguyên hoặc chỉnh nếu muốn */
+    /* --- Thay đổi ở đây --- */
+    font-size: 1.15em; /* Tăng một chút so với 1.1em */
+    text-transform: uppercase; /* Chuyển thành chữ HOA */
+    letter-spacing: 0.5px; /* Tùy chọn: Thêm khoảng cách chữ */
+    /* -------------------- */
+ }
+   .category-list-item a:hover {
+       color: #0056b3; /* Đổi màu chữ khi hover */
+       text-decoration: none;
+   }
+  
+  /* Định dạng cho phần hiển thị số lượng bài viết (dạng huy hiệu) */
+  .category-post-count {
+     font-size: 0.8em; /* Cỡ chữ nhỏ hơn */
+     font-weight: 500; /* Đậm vừa */
+     color: #fff; /* Chữ màu trắng */
+     background-color: #6c757d; /* Nền màu xám */
+     padding: 4px 10px; /* Padding trong huy hiệu */
+     border-radius: 12px; /* Bo tròn thành hình viên thuốc */
+     white-space: nowrap; /* Đảm bảo không xuống dòng */
+     transition: background-color 0.2s ease; /* Hiệu ứng đổi màu nền */
+  }
+   /* Đổi màu nền huy hiệu khi di chuột vào ô category */
+   .category-list-item:hover .category-post-count {
+      background-color: #007bff; /* Nền màu xanh */
+   }
+
+/* ----- Styling for Page Titles (e.g., H1 in main content) ----- */
+.main-content-area > h1 {
+  font-size: 2.4em; /* Tăng kích thước chữ */
+  font-weight: 700; /* Tăng độ đậm */
+  color: #343a40; /* Màu chữ đậm hơn (có thể đổi nếu muốn) */
+  margin-top: 0.5em; /* Giảm khoảng cách trên nếu cần */
+  margin-bottom: 1em; /* Tăng khoảng cách dưới */
+  padding-bottom: 0.4em; /* Khoảng cách giữa chữ và đường kẻ dưới */
+  border-bottom: 2px solid #007bff; /* Thêm đường kẻ chân màu xanh */
+  display: inline-block; /* Cho đường kẻ chỉ dài bằng chữ */
+}
+
+   /* ----- Add Cyclic Colors to Category Items ----- */
+
+/* 1. Định nghĩa bảng màu (bạn có thể thay đổi các mã màu này) */
+:root {
+  --cat-color-1: #007bff; /* Blue */
+  --cat-color-2: #28a745; /* Green */
+  --cat-color-3: #ffc107; /* Yellow/Gold */
+  --cat-color-4: #dc3545; /* Red */
+  --cat-color-5: #6f42c1; /* Purple */
+}
+
+/* 2. Cập nhật style cơ bản của category item */
+.category-list-item {
+  /* Giữ lại các style cũ như background, border-radius, transition... */
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out, border-left-color 0.3s ease;
+  /* Đặt màu viền trái mặc định là một trong các màu hoặc màu nhạt */
+  border-left: 5px solid #e9ecef; /* Dày hơn chút và màu nhạt ban đầu */
+  background-color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* 3. Áp dụng màu viền trái xoay vòng (dùng 5 màu) */
+/* Mục thứ 1, 6, 11... */
+.category-list-item:nth-child(5n + 1) { border-left-color: var(--cat-color-1); }
+/* Mục thứ 2, 7, 12... */
+.category-list-item:nth-child(5n + 2) { border-left-color: var(--cat-color-2); }
+/* Mục thứ 3, 8, 13... */
+.category-list-item:nth-child(5n + 3) { border-left-color: var(--cat-color-3); }
+/* Mục thứ 4, 9, 14... */
+.category-list-item:nth-child(5n + 4) { border-left-color: var(--cat-color-4); }
+/* Mục thứ 5, 10, 15... */
+.category-list-item:nth-child(5n + 5) { border-left-color: var(--cat-color-5); }
+
+/* 4. (Tùy chọn) Tinh chỉnh hiệu ứng hover để hợp màu hơn */
+.category-list-item:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 6px 14px rgba(0,0,0,0.09);
+   /* Không cần đổi border-left-color khi hover nữa vì nó đã có màu sẵn */
+}
+
+/* 5. (Tùy chọn) Đổi màu huy hiệu khi hover cho hợp với màu viền */
+.category-list-item:nth-child(5n + 1):hover .category-post-count { background-color: var(--cat-color-1); color: white;}
+.category-list-item:nth-child(5n + 2):hover .category-post-count { background-color: var(--cat-color-2); color: white;}
+.category-list-item:nth-child(5n + 3):hover .category-post-count { background-color: var(--cat-color-3); color: #333;} /* Chữ đen trên nền vàng */
+.category-list-item:nth-child(5n + 4):hover .category-post-count { background-color: var(--cat-color-4); color: white;}
+.category-list-item:nth-child(5n + 5):hover .category-post-count { background-color: var(--cat-color-5); color: white;}
+
+/* 6. (Tùy chọn) Bỏ màu nền mặc định của huy hiệu nếu chỉ muốn đổi khi hover */
+/* .category-post-count { background-color: transparent; color: #6c757d; border: 1px solid #ccc; } */
+
+/* --- Language Selector Styling --- */
+.language-selector {
+  text-align: center; /* Căn giữa menu trong sidebar */
+  margin-top: 20px; /* Tạo khoảng cách phía trên */
+  margin-bottom: 10px; /* Tạo khoảng cách phía dưới */
+}
+
+.language-selector select {
+  padding: 8px 15px; /* Tăng vùng chọn */
+  font-size: 14px; /* Cỡ chữ vừa phải */
+  border-radius: 5px; /* Bo góc để mềm mại hơn */
+  border: 1px solid #ccc; /* Viền nhạt */
+  background-color: #ffffff; /* Nền trắng */
+  color: #495057; /* Màu chữ tối ưu */
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Hiệu ứng chuyển động mượt */
+}
+
+.language-selector select:hover {
+  background-color: #f8f9fa; /* Nền nhạt hơn khi hover */
+  border-color: #007bff; /* Đổi màu viền */
+}
+
+.language-selector select:focus {
+  border-color: #007bff; /* Viền xanh khi focus */
+  outline: none; /* Loại bỏ outline mặc định */
+}

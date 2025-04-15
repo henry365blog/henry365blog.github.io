@@ -3,8 +3,13 @@
 
   <section class="widget widget-search">
     <h4>Tìm kiếm</h4>
-    <p>(Search placeholder)</p>
-    {% comment %} TODO: Implement search later {% endcomment %}
+    <div class="search-form-container">
+      <input type="search" id="search-input" placeholder="Nhập từ khóa..." aria-label="Search query">
+      {% comment %} Phần comment lỗi đã được loại bỏ {% endcomment %}
+    </div>
+    <div id="search-results" style="margin-top: 10px;">
+      {% comment %} Kết quả tìm kiếm sẽ được JavaScript tải vào đây {% endcomment %}
+    </div>
   </section>
 
   <section class="widget widget-recent-posts">

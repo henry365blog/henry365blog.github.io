@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-15T23:29:53+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HENRY BLOG 365 !!!</title><subtitle>Chia sẻ kiến thức và kinh nghiệm IT.</subtitle><entry><title type="html">Các bước cài đặt Linux cơ bản</title><link href="http://localhost:4000/linux/cai-dat-linux-co-ban/" rel="alternate" type="text/html" title="Các bước cài đặt Linux cơ bản" /><published>2025-04-08T11:00:00+07:00</published><updated>2025-04-08T11:00:00+07:00</updated><id>http://localhost:4000/linux/cai-dat-linux-co-ban</id><content type="html" xml:base="http://localhost:4000/linux/cai-dat-linux-co-ban/"><![CDATA[<p>Hướng dẫn cài đặt Linux…</p>]]></content><author><name></name></author><category term="linux" /><summary type="html"><![CDATA[Hướng dẫn cài đặt Linux…]]></summary></entry><entry><title type="html">SUSE Linux Enterprise Server được dùng ở đâu?</title><link href="http://localhost:4000/linux/ung-dung-thuc-te-cua-sles/" rel="alternate" type="text/html" title="SUSE Linux Enterprise Server được dùng ở đâu?" /><published>2025-04-07T17:55:00+07:00</published><updated>2025-04-07T17:55:00+07:00</updated><id>http://localhost:4000/linux/ung-dung-thuc-te-cua-sles</id><content type="html" xml:base="http://localhost:4000/linux/ung-dung-thuc-te-cua-sles/"><![CDATA[<p>Với sự tập trung vào độ ổn định, bảo mật và hỗ trợ doanh nghiệp, SUSE Linux Enterprise Server (SLES) thường được tìm thấy trong các môi trường và ứng dụng quan trọng sau:</p>
+
+<ol>
+  <li><strong>Hạ tầng cho SAP:</strong> SLES là một trong những hệ điều hành Linux hàng đầu và được chứng nhận chính thức để chạy các giải pháp SAP, đặc biệt là SAP HANA và SAP S/4HANA. Nhiều doanh nghiệp lớn tin dùng SLES cho hệ thống SAP cốt lõi của họ.</li>
+  <li><strong>Máy chủ Doanh nghiệp:</strong> Dùng làm hệ điều hành cho các máy chủ ứng dụng, máy chủ web, máy chủ cơ sở dữ liệu, máy chủ file… đòi hỏi độ tin cậy và thời gian hoạt động cao.</li>
+  <li><strong>Hệ thống Mainframe (IBM Z &amp; LinuxONE):</strong> SLES có phiên bản đặc biệt được tối ưu hóa cho các hệ thống máy chủ lớn IBM Z và LinuxONE, tận dụng khả năng xử lý mạnh mẽ và độ tin cậy của nền tảng này.</li>
+  <li><strong>Điện toán hiệu năng cao (HPC):</strong> SLES for HPC cung cấp các công cụ và tối ưu hóa cần thiết để xây dựng và quản lý các cụm máy tính (cluster) hiệu năng cao cho nghiên cứu khoa học, mô phỏng kỹ thuật…</li>
+  <li><strong>Hệ thống Nhúng (Embedded):</strong> SUSE cũng cung cấp các phiên bản SLES tùy biến cho các hệ thống nhúng trong công nghiệp, bán lẻ (máy POS), y tế… nơi cần sự ổn định và vòng đời hỗ trợ dài.</li>
+  <li><strong>Ảo hóa và Đám mây:</strong> SLES là một hệ điều hành khách (guest OS) phổ biến trên các nền tảng ảo hóa (VMware, KVM, Xen) và được hỗ trợ tốt trên các đám mây công cộng lớn như Azure, AWS, Google Cloud.</li>
+</ol>
+
+<p>Nhìn chung, SLES là lựa chọn mạnh mẽ khi độ ổn định, bảo mật và hỗ trợ dài hạn là các yếu tố được ưu tiên hàng đầu cho hạ tầng IT của doanh nghiệp.</p>
+
+<hr />
+<p>Henry Blog 365</p>]]></content><author><name></name></author><category term="linux" /><category term="suse" /><category term="sles" /><category term="enterprise" /><category term="use-case" /><category term="sap" /><category term="hpc" /><category term="mainframe" /><summary type="html"><![CDATA[Với sự tập trung vào độ ổn định, bảo mật và hỗ trợ doanh nghiệp, SUSE Linux Enterprise Server (SLES) thường được tìm thấy trong các môi trường và ứng dụng quan trọng sau:]]></summary></entry><entry><title type="html">Một số tính năng và lợi ích nổi bật của SLES</title><link href="http://localhost:4000/linux/tinh-nang-noi-bat-cua-sles/" rel="alternate" type="text/html" title="Một số tính năng và lợi ích nổi bật của SLES" /><published>2025-04-07T17:50:00+07:00</published><updated>2025-04-07T17:50:00+07:00</updated><id>http://localhost:4000/linux/tinh-nang-noi-bat-cua-sles</id><content type="html" xml:base="http://localhost:4000/linux/tinh-nang-noi-bat-cua-sles/"><![CDATA[<p>SUSE Linux Enterprise Server (SLES) không chỉ nổi tiếng về sự ổn định mà còn đi kèm nhiều tính năng và lợi ích được thiết kế riêng cho môi trường doanh nghiệp:</p>
+
+<ol>
+  <li><strong>Hỗ trợ dài hạn (LTS &amp; LTSS):</strong> Giúp doanh nghiệp yên tâm triển khai và vận hành hệ thống trong nhiều năm mà không cần nâng cấp lớn thường xuyên, đồng thời vẫn nhận được các bản vá bảo mật quan trọng.</li>
+  <li><strong>Bảo mật tăng cường:</strong> SLES thường đạt các chứng nhận bảo mật quốc tế quan trọng như Common Criteria EAL 4+, FIPS 140-2, giúp đáp ứng các yêu cầu tuân thủ nghiêm ngặt. Nó cũng tích hợp các công cụ bảo mật mạnh mẽ.</li>
+  <li><strong>YaST (Yet another Setup Tool):</strong> Công cụ quản trị đồ họa và dòng lệnh độc đáo của SUSE, giúp đơn giản hóa việc cài đặt, cấu hình mạng, quản lý phần mềm, phân vùng đĩa và nhiều tác vụ quản trị hệ thống khác.</li>
+  <li><strong>SUSE Linux Enterprise Live Patching:</strong> Cho phép áp dụng các bản vá kernel quan trọng mà <strong>không cần khởi động lại</strong> máy chủ, tối đa hóa thời gian hoạt động (uptime) cho các hệ thống quan trọng.</li>
+  <li><strong>Khả năng sẵn sàng cao (High Availability Extension):</strong> Cung cấp giải pháp clustering mạnh mẽ để xây dựng các hệ thống có khả năng chịu lỗi cao, đảm bảo dịch vụ luôn sẵn sàng.</li>
+  <li><strong>Tối ưu cho Workload cụ thể:</strong> Có các phiên bản hoặc module tối ưu riêng cho SAP, HPC, IBM Z (mainframe), phù hợp với các nhu cầu đặc thù của doanh nghiệp.</li>
+</ol>
+
+<p>Những tính năng này làm cho SLES trở thành một nền tảng đáng tin cậy cho các ứng dụng và dịch vụ đòi hỏi hiệu năng, bảo mật và tính sẵn sàng cao.</p>
+
+<hr />
+<p>Henry Blog 365</p>]]></content><author><name></name></author><category term="linux" /><category term="suse" /><category term="sles" /><category term="enterprise" /><category term="features" /><category term="yast" /><category term="security" /><summary type="html"><![CDATA[SUSE Linux Enterprise Server (SLES) không chỉ nổi tiếng về sự ổn định mà còn đi kèm nhiều tính năng và lợi ích được thiết kế riêng cho môi trường doanh nghiệp:]]></summary></entry><entry><title type="html">SUSE Linux Enterprise Server (SLES) là gì?</title><link href="http://localhost:4000/linux/suse-linux-enterprise-server-la-gi/" rel="alternate" type="text/html" title="SUSE Linux Enterprise Server (SLES) là gì?" /><published>2025-04-07T17:45:00+07:00</published><updated>2025-04-07T17:45:00+07:00</updated><id>http://localhost:4000/linux/suse-linux-enterprise-server-la-gi</id><content type="html" xml:base="http://localhost:4000/linux/suse-linux-enterprise-server-la-gi/"><![CDATA[<p>SUSE Linux Enterprise Server, thường được gọi tắt là SLES, là một hệ điều hành dựa trên Linux được phát triển bởi SUSE, tập trung chủ yếu vào thị trường <strong>doanh nghiệp</strong>. Khác với các bản phân phối Linux cộng đồng như openSUSE (cũng do SUSE bảo trợ), SLES được xây dựng với mục tiêu mang lại sự <strong>ổn định, bảo mật cao, và hỗ trợ dài hạn</strong> cho các ứng dụng và hạ tầng quan trọng.</p>
+
+<p><strong>Điểm chính về SLES:</strong></p>
+
+<ul>
+  <li><strong>Nền tảng Doanh nghiệp:</strong> Được thiết kế cho máy chủ vật lý, ảo hóa, đám mây và container trong môi trường doanh nghiệp đòi hỏi độ tin cậy cao.</li>
+  <li><strong>Ổn định &amp; Hỗ trợ:</strong> SUSE cung cấp các chu kỳ hỗ trợ dài hạn (Long Term Service Pack Support - LTSS) cho SLES, đảm bảo các bản vá lỗi và cập nhật bảo mật trong nhiều năm.</li>
+  <li><strong>Tối ưu hóa:</strong> Thường được tối ưu hóa và chứng nhận để chạy các ứng dụng doanh nghiệp quan trọng như SAP HANA, các ứng dụng của IBM, và các hệ thống tính toán hiệu năng cao (HPC).</li>
+  <li><strong>Công cụ quản lý:</strong> Bao gồm công cụ quản trị hệ thống mạnh mẽ như YaST (Yet another Setup Tool) giúp đơn giản hóa việc cấu hình và quản lý.</li>
+</ul>
+
+<p>SLES là một lựa chọn hàng đầu cho các tổ chức cần một nền tảng Linux vững chắc, được hỗ trợ chuyên nghiệp cho các hệ thống kinh doanh cốt lõi của họ.</p>
+
+<hr />
+<p>Henry Blog 365</p>]]></content><author><name></name></author><category term="linux" /><category term="suse" /><category term="sles" /><category term="enterprise" /><category term="linux-distribution" /><category term="intro" /><summary type="html"><![CDATA[SUSE Linux Enterprise Server, thường được gọi tắt là SLES, là một hệ điều hành dựa trên Linux được phát triển bởi SUSE, tập trung chủ yếu vào thị trường doanh nghiệp. Khác với các bản phân phối Linux cộng đồng như openSUSE (cũng do SUSE bảo trợ), SLES được xây dựng với mục tiêu mang lại sự ổn định, bảo mật cao, và hỗ trợ dài hạn cho các ứng dụng và hạ tầng quan trọng.]]></summary></entry><entry><title type="html">Phân biệt nhanh IaaS, PaaS và SaaS trong Cloud Computing</title><link href="http://localhost:4000/cloud/phan-biet-nhanh-iaas-paas-saas/" rel="alternate" type="text/html" title="Phân biệt nhanh IaaS, PaaS và SaaS trong Cloud Computing" /><published>2025-04-07T12:15:00+07:00</published><updated>2025-04-07T12:15:00+07:00</updated><id>http://localhost:4000/cloud/phan-biet-nhanh-iaas-paas-saas</id><content type="html" xml:base="http://localhost:4000/cloud/phan-biet-nhanh-iaas-paas-saas/"><![CDATA[<p>Khi tìm hiểu về điện toán đám mây (Cloud Computing), bạn sẽ thường xuyên gặp các thuật ngữ IaaS, PaaS và SaaS. Đây là ba mô hình cung cấp dịch vụ đám mây chính. Hiểu rõ sự khác biệt giúp bạn lựa chọn giải pháp phù hợp.</p>
+
+<p>Hãy tưởng tượng việc làm một chiếc bánh Pizza:</p>
+
+<ol>
+  <li><strong>IaaS (Infrastructure as a Service - Hạ tầng như một Dịch vụ):</strong>
+    <ul>
+      <li><strong>Tương tự:</strong> Bạn thuê người ta <strong>lò nướng, bếp, gas, bàn ghế…</strong> (hạ tầng cơ bản).</li>
+      <li><strong>Bạn tự làm:</strong> Mua nguyên liệu (bột, sốt, topping…), nhào bột, làm bánh, nướng bánh, dọn dẹp.</li>
+      <li><strong>Cloud:</strong> Nhà cung cấp chỉ cung cấp hạ tầng ảo hóa cơ bản nhất: máy ảo (VMs), lưu trữ (storage), mạng (networking). Bạn phải tự cài đặt hệ điều hành, middleware, ứng dụng, quản lý vá lỗi HĐH…</li>
+      <li><strong>Ví dụ:</strong> Azure VMs, AWS EC2, Google Compute Engine.</li>
+    </ul>
+  </li>
+  <li><strong>PaaS (Platform as a Service - Nền tảng như một Dịch vụ):</strong>
+    <ul>
+      <li><strong>Tương tự:</strong> Bạn đến một cửa hàng <strong>cho thuê chỗ làm bánh Pizza</strong>, họ có sẵn lò nướng, bếp, gas, bàn, bột đã nhào sẵn, bạn chỉ cần <strong>mang topping đến, tự làm và nướng bánh</strong>.</li>
+      <li><strong>Cloud:</strong> Nhà cung cấp quản lý hạ tầng, hệ điều hành, middleware. Bạn chỉ cần đưa code/ứng dụng của mình lên và chạy. Bạn không cần lo về việc vá lỗi HĐH hay quản lý server vật lý.</li>
+      <li><strong>Ví dụ:</strong> Azure App Service, AWS Elastic Beanstalk, Google App Engine, Heroku.</li>
+    </ul>
+  </li>
+  <li><strong>SaaS (Software as a Service - Phần mềm như một Dịch vụ):</strong>
+    <ul>
+      <li><strong>Tương tự:</strong> Bạn <strong>gọi điện đặt Pizza giao tận nhà</strong>. Bạn không cần làm gì cả, chỉ việc ăn.</li>
+      <li><strong>Cloud:</strong> Nhà cung cấp cung cấp một phần mềm hoàn chỉnh, chạy trên hạ tầng của họ. Bạn chỉ cần đăng ký tài khoản và sử dụng qua trình duyệt hoặc ứng dụng. Bạn không quản lý bất cứ thứ gì về hạ tầng hay nền tảng.</li>
+      <li><strong>Ví dụ:</strong> Gmail, Microsoft 365, Salesforce, Dropbox.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Tóm lại:</strong> Mức độ kiểm soát và trách nhiệm quản lý của bạn giảm dần từ IaaS -&gt; PaaS -&gt; SaaS. Lựa chọn mô hình nào phụ thuộc vào nhu cầu về kiểm soát, linh hoạt và nguồn lực quản trị của bạn.</p>
+
+<hr />
+<p>Henry Blog 365</p>]]></content><author><name></name></author><category term="cloud" /><category term="cloud-computing" /><category term="iaas" /><category term="paas" /><category term="saas" /><category term="concepts" /><category term="comparison" /><summary type="html"><![CDATA[Khi tìm hiểu về điện toán đám mây (Cloud Computing), bạn sẽ thường xuyên gặp các thuật ngữ IaaS, PaaS và SaaS. Đây là ba mô hình cung cấp dịch vụ đám mây chính. Hiểu rõ sự khác biệt giúp bạn lựa chọn giải pháp phù hợp.]]></summary></entry><entry><title type="html">Mẹo Linux: Tìm kiếm nội dung file nhanh với grep</title><link href="http://localhost:4000/linux/tips/meo-dung-grep-tim-kiem-nhanh/" rel="alternate" type="text/html" title="Mẹo Linux: Tìm kiếm nội dung file nhanh với grep" /><published>2025-04-07T11:30:00+07:00</published><updated>2025-04-07T11:30:00+07:00</updated><id>http://localhost:4000/linux/tips/meo-dung-grep-tim-kiem-nhanh</id><content type="html" xml:base="http://localhost:4000/linux/tips/meo-dung-grep-tim-kiem-nhanh/"><![CDATA[<p>Khi làm việc trên Linux, việc tìm kiếm một đoạn văn bản cụ thể bên trong các file là tác vụ rất thường xuyên. Công cụ dòng lệnh <code class="language-plaintext highlighter-rouge">grep</code> là trợ thủ đắc lực cho việc này.</p>
+
+<p>Dưới đây là một vài cách dùng <code class="language-plaintext highlighter-rouge">grep</code> cơ bản và hữu ích:</p>
+
+<ol>
+  <li><strong>Tìm kiếm cơ bản:</strong> Tìm một chuỗi trong một file.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="s2">"chuoi_can_tim"</span> ten_file.txt
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Tìm kiếm không phân biệt hoa/thường (<code class="language-plaintext highlighter-rouge">-i</code>):</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-i</span> <span class="s2">"SearchString"</span> logfile.log
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Tìm kiếm trong tất cả file của thư mục hiện tại:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="s2">"my_variable"</span> <span class="k">*</span>
+</code></pre></div>    </div>
+    <p><em>(Lưu ý: Dấu <code class="language-plaintext highlighter-rouge">*</code> có thể bao gồm cả thư mục con, gây lỗi. Dùng các cách dưới an toàn hơn).</em></p>
+  </li>
+  <li><strong>Tìm kiếm đệ quy trong thư mục con (<code class="language-plaintext highlighter-rouge">-r</code> hoặc <code class="language-plaintext highlighter-rouge">-R</code>):</strong> Tìm chuỗi trong tất cả file thuộc thư mục hiện tại và các thư mục con của nó.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-r</span> <span class="s2">"api_key"</span> <span class="nb">.</span>
+</code></pre></div>    </div>
+    <p><em>(Dấu <code class="language-plaintext highlighter-rouge">.</code> đại diện cho thư mục hiện tại).</em></p>
+  </li>
+  <li><strong>Chỉ hiển thị tên file chứa chuỗi (<code class="language-plaintext highlighter-rouge">-l</code>):</strong> Rất hữu ích khi bạn chỉ cần biết file nào chứa thông tin cần tìm.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-rl</span> <span class="s2">"config_value"</span> /etc/
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Hiển thị số dòng xung quanh kết quả (<code class="language-plaintext highlighter-rouge">-C</code>, <code class="language-plaintext highlighter-rouge">-B</code>, <code class="language-plaintext highlighter-rouge">-A</code>):</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">-C n</code>: Hiển thị <code class="language-plaintext highlighter-rouge">n</code> dòng ngữ cảnh trước và sau dòng khớp. Ví dụ: <code class="language-plaintext highlighter-rouge">grep -C 2 "error" system.log</code></li>
+      <li><code class="language-plaintext highlighter-rouge">-B n</code>: Hiển thị <code class="language-plaintext highlighter-rouge">n</code> dòng <em>trước</em> dòng khớp.</li>
+      <li><code class="language-plaintext highlighter-rouge">-A n</code>: Hiển thị <code class="language-plaintext highlighter-rouge">n</code> dòng <em>sau</em> dòng khớp.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">grep</code> là một công cụ rất mạnh mẽ với nhiều tùy chọn khác. Nắm vững các cách dùng cơ bản này sẽ giúp bạn xử lý công việc trên Linux hiệu quả hơn rất nhiều.</p>
+
+<hr />
+<p>Henry Blog 365</p>]]></content><author><name></name></author><category term="linux" /><category term="tips" /><category term="linux" /><category term="command-line" /><category term="grep" /><category term="search" /><category term="tips" /><category term="text-processing" /><summary type="html"><![CDATA[Khi làm việc trên Linux, việc tìm kiếm một đoạn văn bản cụ thể bên trong các file là tác vụ rất thường xuyên. Công cụ dòng lệnh grep là trợ thủ đắc lực cho việc này.]]></summary></entry><entry><title type="html">Giới thiệu về Cloud Computing</title><link href="http://localhost:4000/cloud/bai-viet-ve-cloud/" rel="alternate" type="text/html" title="Giới thiệu về Cloud Computing" /><published>2025-04-07T10:00:00+07:00</published><updated>2025-04-07T10:00:00+07:00</updated><id>http://localhost:4000/cloud/bai-viet-ve-cloud</id><content type="html" xml:base="http://localhost:4000/cloud/bai-viet-ve-cloud/"><![CDATA[<p>Nội dung bài viết về Cloud Computing…</p>]]></content><author><name></name></author><category term="cloud" /><summary type="html"><![CDATA[Nội dung bài viết về Cloud Computing…]]></summary></entry><entry><title type="html">Lựa chọn Công cụ Phù hợp cho Dự án Cá nhân</title><link href="http://localhost:4000/du-an/lua-chon-cong-cu-cho-du-an-ca-nhan/" rel="alternate" type="text/html" title="Lựa chọn Công cụ Phù hợp cho Dự án Cá nhân" /><published>2025-04-07T09:15:00+07:00</published><updated>2025-04-07T09:15:00+07:00</updated><id>http://localhost:4000/du-an/lua-chon-cong-cu-cho-du-an-ca-nhan</id><content type="html" xml:base="http://localhost:4000/du-an/lua-chon-cong-cu-cho-du-an-ca-nhan/"><![CDATA[<p>Sau khi đã lên ý tưởng và kế hoạch cơ bản cho dự án cá nhân, việc lựa chọn đúng công cụ (tools) sẽ giúp quá trình phát triển của bạn hiệu quả hơn. Dưới đây là một số loại công cụ cần cân nhắc:</p>
+
+<ol>
+  <li><strong>Ngôn ngữ lập trình &amp; Framework:</strong>
+    <ul>
+      <li>Dựa trên loại dự án (web, mobile, desktop, script…) và mục tiêu học hỏi của bạn.</li>
+      <li>Ví dụ: Python (Django, Flask), JavaScript (Node.js, React, Vue), Java (Spring), C# (.NET)…</li>
+      <li>Hãy chọn thứ bạn quen thuộc hoặc muốn học nhất.</li>
+    </ul>
+  </li>
+  <li><strong>Trình soạn thảo Code (Code Editor) / IDE:</strong>
+    <ul>
+      <li>Nơi bạn sẽ viết code.</li>
+      <li>VS Code là lựa chọn cực kỳ phổ biến và mạnh mẽ, miễn phí.</li>
+      <li>Các lựa chọn khác: Sublime Text, Atom, hoặc các IDE chuyên dụng như IntelliJ IDEA (Java), PyCharm (Python), Visual Studio (C#/.NET).</li>
+    </ul>
+  </li>
+  <li><strong>Hệ thống Quản lý Phiên bản (Version Control System - VCS):</strong>
+    <ul>
+      <li><strong>Git là tiêu chuẩn.</strong> Bắt buộc phải dùng để theo dõi thay đổi, sao lưu code, và cộng tác (nếu có).</li>
+      <li>Kết hợp với các nền tảng hosting như GitHub, GitLab, Bitbucket.</li>
+    </ul>
+  </li>
+  <li><strong>Công cụ Quản lý Công việc/Issue Tracking:</strong>
+    <ul>
+      <li>Giúp theo dõi các nhiệm vụ cần làm, lỗi cần sửa.</li>
+      <li>Đơn giản: Dùng file text, Trello, Todoist.</li>
+      <li>Chuyên nghiệp hơn: GitHub Issues, Jira (thường cho dự án lớn), Asana.</li>
+    </ul>
+  </li>
+  <li><strong>Môi trường/Công cụ Build &amp; Deployment:</strong>
+    <ul>
+      <li>Tùy thuộc vào dự án: Docker, Webpack, Gulp, Maven, Gradle, các dịch vụ CI/CD (GitHub Actions, Jenkins…).</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Việc chọn đúng bộ công cụ ban đầu giúp bạn tập trung vào việc phát triển tính năng thay vì vật lộn với môi trường làm việc.</p>
+
+<hr />
+<p>** Henry Blog 365 **</p>]]></content><author><name></name></author><category term="du-an" /><category term="project" /><category term="tools" /><category term="development" /><category term="planning" /><category term="software" /><summary type="html"><![CDATA[Sau khi đã lên ý tưởng và kế hoạch cơ bản cho dự án cá nhân, việc lựa chọn đúng công cụ (tools) sẽ giúp quá trình phát triển của bạn hiệu quả hơn. Dưới đây là một số loại công cụ cần cân nhắc:]]></summary></entry><entry><title type="html">Lời chào từ HenryVo - Chào mừng bạn đến với Blog Công nghệ!</title><link href="http://localhost:4000/categories/gioi-thieu/" rel="alternate" type="text/html" title="Lời chào từ HenryVo - Chào mừng bạn đến với Blog Công nghệ!" /><published>2025-04-06T15:53:00+07:00</published><updated>2025-04-06T15:53:00+07:00</updated><id>http://localhost:4000/categories/bai-viet-dau-tien</id><content type="html" xml:base="http://localhost:4000/categories/gioi-thieu/"><![CDATA[<p>Xin chào tất cả các bạn!</p>
+
+<p>Tôi là HenryVo, và tôi rất vui mừng chào đón bạn đến với không gian chia sẻ kiến thức và đam mê công nghệ của mình - <strong>Blog của HenryVo</strong>.</p>
+
+<p>Trong thế giới công nghệ thông tin không ngừng biến đổi, việc cập nhật kiến thức, khám phá các giải pháp mới và tìm hiểu những ý tưởng sáng tạo là điều vô cùng cần thiết. Đó chính là lý do tôi tạo ra blog này: để cùng nhau khám phá, học hỏi và chia sẻ những kinh nghiệm thực tế trong lĩnh vực IT.</p>
+
+<p><strong>Bạn có thể mong đợi gì ở blog này?</strong></p>
+
+<ul>
+  <li><strong>Giải pháp Công nghệ:</strong> Phân tích, đánh giá và hướng dẫn các giải pháp IT hữu ích cho công việc và cuộc sống.</li>
+  <li><strong>Thủ thuật Thực tế:</strong> Những mẹo nhỏ, kinh nghiệm xử lý sự cố, tối ưu hóa hệ thống mà tôi đã đúc kết được.</li>
+  <li><strong>Ý tưởng Sáng tạo:</strong> Khám phá những cách tiếp cận mới, những dự án cá nhân thú vị hoặc những công nghệ đang là xu hướng.</li>
+  <li><strong>Chia sẻ Kiến thức:</strong> Các bài viết đi sâu vào một chủ đề công nghệ cụ thể (lập trình, mạng, bảo mật, hệ thống…).</li>
+</ul>
+
+<p>Mục tiêu của tôi là biến blog này thành một nguồn tài nguyên giá trị, nơi bạn không chỉ tìm thấy thông tin hữu ích mà còn có thể trao đổi, thảo luận và cùng nhau phát triển.</p>
+
+<p>Hãy thường xuyên ghé thăm, đọc các bài viết và đừng ngần ngại để lại bình luận hay câu hỏi nhé. Sự tương tác của các bạn chính là động lực lớn nhất cho tôi!</p>
+
+<p>Một lần nữa, chào mừng bạn đến với <code class="language-plaintext highlighter-rouge">HENRY BLOG 365 !!!</code>!</p>
+
+<p>Trân trọng,
+HenryVo</p>]]></content><author><name></name></author><category term="gioi-thieu" /><summary type="html"><![CDATA[Xin chào tất cả các bạn!]]></summary></entry><entry><title type="html">Triển khai Web App đơn giản với Azure App Service</title><link href="http://localhost:4000/cloud/microsoft/trien-khai-web-app-voi-azure-app-service/" rel="alternate" type="text/html" title="Triển khai Web App đơn giản với Azure App Service" /><published>2025-04-06T15:00:00+07:00</published><updated>2025-04-06T15:00:00+07:00</updated><id>http://localhost:4000/cloud/microsoft/trien-khai-web-app-voi-azure-app-service</id><content type="html" xml:base="http://localhost:4000/cloud/microsoft/trien-khai-web-app-voi-azure-app-service/"><![CDATA[<p>Nếu bạn cần host một ứng dụng web hoặc API mà không muốn bận tâm nhiều đến việc quản lý máy chủ, hệ điều hành, thì <strong>Azure App Service</strong> là một lựa chọn tuyệt vời. Đây là một dịch vụ PaaS (Platform as a Service) mạnh mẽ của Azure.</p>
+
+<p><strong>Azure App Service là gì?</strong></p>
+
+<p>Azure App Service là một nền tảng được quản lý hoàn toàn để xây dựng, triển khai và mở rộng quy mô các ứng dụng web, di động và API. Bạn chỉ cần tập trung vào code của mình, Azure sẽ lo phần hạ tầng bên dưới.</p>
+
+<p><strong>Lợi ích chính:</strong></p>
+
+<ul>
+  <li><strong>Không cần quản lý hạ tầng:</strong> Azure tự quản lý hệ điều hành, bản vá, bảo mật nền tảng.</li>
+  <li><strong>Hỗ trợ đa ngôn ngữ/nền tảng:</strong> Hỗ trợ .NET, .NET Core, Java, Ruby, Node.js, PHP, Python, Docker Container.</li>
+  <li><strong>Tự động mở rộng (Auto-scaling):</strong> Dễ dàng cấu hình để tự động tăng hoặc giảm số lượng máy chủ chạy ứng dụng dựa trên tải.</li>
+  <li><strong>Tích hợp CI/CD:</strong> Dễ dàng thiết lập quy trình triển khai tự động từ Azure DevOps, GitHub, Bitbucket…</li>
+  <li><strong>Deployment Slots:</strong> Tạo môi trường staging để kiểm thử phiên bản mới trước khi đưa ra production mà không gây gián đoạn.</li>
+  <li><strong>Bảo mật tích hợp:</strong> Hỗ trợ HTTPS, xác thực/ủy quyền, tích hợp Azure AD.</li>
+</ul>
+
+<p><strong>Khi nào dùng App Service?</strong></p>
+
+<ul>
+  <li>Host các trang web (tĩnh và động).</li>
+  <li>Triển khai các API RESTful.</li>
+  <li>Backend cho ứng dụng di động.</li>
+  <li>Các ứng dụng cần khả năng mở rộng linh hoạt và không muốn quản lý máy chủ.</li>
+</ul>
+
+<p>Triển khai lên App Service rất đơn giản, bạn có thể đẩy code trực tiếp từ Git, Visual Studio, hoặc dùng các công cụ dòng lệnh. Đây là dịch vụ PaaS hàng đầu giúp tăng tốc độ phát triển và đơn giản hóa vận hành ứng dụng web.</p>
+
+<hr />
+<p><strong>Henry Blog 365</strong></p>]]></content><author><name></name></author><category term="cloud" /><category term="microsoft" /><category term="azure" /><category term="vm" /><category term="iaas" /><category term="basic" /><category term="infrastructure" /><summary type="html"><![CDATA[Nếu bạn cần host một ứng dụng web hoặc API mà không muốn bận tâm nhiều đến việc quản lý máy chủ, hệ điều hành, thì Azure App Service là một lựa chọn tuyệt vời. Đây là một dịch vụ PaaS (Platform as a Service) mạnh mẽ của Azure.]]></summary></entry></feed>

@@ -1,0 +1,14 @@
+# Đảm bảo file văn bản sử dụng LF
+* text=auto
+
+# Các file cụ thể sử dụng LF
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+
+# Các file nhị phân không thay đổi
+*.png binary
+*.jpg binary
+*.svg binary

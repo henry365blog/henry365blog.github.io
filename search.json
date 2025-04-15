@@ -1,0 +1,16 @@
+---
+layout: null # Không dùng layout nào cho file JSON này
+---
+[
+  {% comment %} Lặp qua tất cả bài viết {% endcomment %}
+  {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }}, {% comment %} Tiêu đề bài viết (escape JSON) {% endcomment %}
+      "url": {{ post.url | relative_url | jsonify }}, {% comment %} Đường dẫn URL (escape JSON) {% endcomment %}
+      "date": "{{ post.date | date: '%d/%m/%Y' }}", {% comment %} Ngày đăng (chuỗi bình thường) {% endcomment %}
+      "content": {{ post.content | strip_html | normalize_whitespace | jsonify }} {% comment %} Nội dung đã loại bỏ HTML, khoảng trắng thừa và escape JSON {% endcomment %}
+    }
+    {% comment %} Thêm dấu phẩy giữa các bài viết, trừ bài cuối cùng {% endcomment %}
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
