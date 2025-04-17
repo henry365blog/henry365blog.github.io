@@ -5,7 +5,7 @@ title: Trang Chủ
 
 <h1>Chào mừng đến với Henry Blog 365</h1>
 
-<p>Đây là trang chủ của blog, nơi bạn có thể tìm thấy các bài viết mới nhất.</p>
+<p>Henry Blog 365 là nơi chia sẻ kiến thức và kinh nghiệm về công nghệ thông tin, từ lập trình, hệ điều hành, đến các giải pháp đám mây.</p>
 
 <hr style="border-color: #333;">
 
@@ -40,6 +40,7 @@ title: Trang Chủ
         {% else %}
           {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 }}
         {% endif %}
+        <a href="{{ post.url | relative_url }}" class="read-more">Đọc thêm →</a>
       </div>
     </article>
   {% endfor %}
@@ -48,3 +49,4 @@ title: Trang Chủ
 <hr style="border-color: #333;">
 
 <p><a href="{{ '/categories/' | relative_url }}">Xem tất cả các chủ đề</a></p>
+<p><a href="{{ '/archives/' | relative_url }}">Xem tất cả bài viết cũ →</a></p>

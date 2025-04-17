@@ -2,7 +2,6 @@
 # File: _layouts/post.html
 # Layout dùng cho các trang bài viết chi tiết trong _posts
 layout: default
-# Kế thừa layout 3 cột chung (default.html)
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -13,26 +12,43 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%d/%m/%Y" }}
       </time>
+      {% if page.author %}
+        | Tác giả: {{ page.author }}
+      {% endif %}
       {% if page.categories.size > 0 %}
-      <span class="post-categories" itemprop="keywords">
-         | Trong:
+        | Trong:
         {% for category in page.categories %}
           <a href="/categories/{{ category | slugify }}/">{{ category | capitalize }}</a>
-          {% unless forloop.last %},{% endunless %} {% endfor %}
-      </span>
+          {% unless forloop.last %},{% endunless %}
+        {% endfor %}
       {% endif %}
     </p>
   </header>
 
-  <hr style="border-color: #ccc; margin: 2em 0;"> <div class="post-content" itemprop="articleBody">
-    {{ content }} </div>
+  <hr style="border-color: #ccc; margin: 2em 0;">
 
-  {% comment %}
-    Phần tùy chọn:
-    - Chia sẻ mạng xã hội
-    - Bài viết liên quan
-    - Hệ thống bình luận (Disqus, etc.)
-    Sẽ thêm sau nếu bạn muốn.
-  {% endcomment %}
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="post-share">
+    <p>Chia sẻ bài viết:</p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" class="share-facebook">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | escape }}" target="_blank" class="share-twitter">Twitter</a>
+    <a href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url }}&title={{ page.title | escape }}" target="_blank" class="share-linkedin">LinkedIn</a>
+  </div>
+
+  <div class="related-posts">
+    <h3>Bài viết liên quan</h3>
+    <ul>
+      {% for post in site.posts %}
+        {% if post != page and post.categories == page.categories %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 
 </article>

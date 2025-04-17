@@ -1,46 +1,41 @@
 ---
-layout: default # Sử dụng layout default của theme hacker
+layout: default
 title: Giới thiệu về tôi
-permalink: /about/ # URL cố định cho trang này
+permalink: /about/
 ---
 
-## <span data-i18n="about_heading">Xin chào, tôi là HenryVo!</span>
+## Xin chào, tôi là Henry Võ!
 
-<p data-i18n="about_introduction">
-  Chào mừng bạn đến với trang giới thiệu của tôi! Đây là nơi tôi chia sẻ về bản thân, sự nghiệp, và mục tiêu phát triển trong lĩnh vực công nghệ thông tin.
-</p>
+Chào mừng bạn đến với trang giới thiệu của tôi! Đây là nơi tôi chia sẻ về bản thân, sự nghiệp, và mục tiêu phát triển trong lĩnh vực công nghệ thông tin.
 
-<h2 data-i18n="experience_heading">Kinh nghiệm</h2>
-<p data-i18n="experience_description">
-  Tôi đã có nhiều năm làm việc trong lĩnh vực IT, tham gia các dự án về triển khai hệ thống, phát triển ứng dụng, và giải pháp công nghệ. Một số dự án đáng chú ý bao gồm:
-</p>
-<ul>
-  <li data-i18n="project_one">Phát triển hệ thống quản lý dữ liệu cho doanh nghiệp.</li>
-  <li data-i18n="project_two">Tích hợp hệ thống đám mây giúp tăng hiệu suất làm việc.</li>
-</ul>
+### Kinh nghiệm
+Tôi là **Microsoft Certified Trainer** với nhiều năm kinh nghiệm trong lĩnh vực CNTT. Tôi đã tham gia vào các dự án triển khai hệ thống, tư vấn giải pháp, và đào tạo chuyên sâu. Một số dự án đáng chú ý bao gồm:
+- Phát triển hệ thống quản lý dữ liệu cho doanh nghiệp.
+- Tích hợp hệ thống đám mây giúp tăng hiệu suất làm việc.
+- Đào tạo và tư vấn cho các tổ chức về công nghệ Microsoft.
 
-<h2 data-i18n="skills_heading">Kỹ năng</h2>
-<p data-i18n="skills_description">
-  Tôi thành thạo các công nghệ và ngôn ngữ lập trình như:
-</p>
-<ul>
-  <li data-i18n="skill_one">Python, JavaScript, và Ruby.</li>
-  <li data-i18n="skill_two">Triển khai hệ thống Linux và Cloud Computing.</li>
-  <li data-i18n="skill_three">Thiết kế cơ sở dữ liệu và tối ưu hiệu năng.</li>
-</ul>
+### Kỹ năng
+Tôi thành thạo các công nghệ và ngôn ngữ lập trình như:
+- **Ngôn ngữ lập trình**: Python, JavaScript, và Ruby.
+- **Hệ thống và công nghệ**: Triển khai hệ thống Linux, Cloud Computing, và các giải pháp Microsoft.
+- **Cơ sở dữ liệu**: Thiết kế cơ sở dữ liệu và tối ưu hiệu năng.
 
-<h2 data-i18n="goals_heading">Mục tiêu</h2>
-<p data-i18n="goals_description">
-  Tôi hướng đến việc xây dựng một cộng đồng công nghệ, nơi mọi người có thể cùng nhau chia sẻ kiến thức, học hỏi, và phát triển sự nghiệp.
-</p>
+### Mục tiêu
+Tôi hướng đến việc xây dựng một cộng đồng công nghệ, nơi mọi người có thể cùng nhau chia sẻ kiến thức, học hỏi, và phát triển sự nghiệp. Đồng thời, tôi mong muốn mang lại các giải pháp công nghệ hiệu quả và đào tạo thế hệ chuyên gia CNTT tiếp theo.
 
-<h2 data-i18n="hobbies_heading">Sở thích</h2>
-<p data-i18n="hobbies_description">
-  Ngoài công nghệ, tôi yêu thích đọc sách, chụp ảnh, và khám phá các nền văn hóa khác nhau thông qua các chuyến đi.
-</p>
+### Sở thích
+Ngoài công nghệ, tôi yêu thích đọc sách, chụp ảnh, và khám phá các nền văn hóa khác nhau thông qua các chuyến đi.
 
-<hr style="border-color: #333;">
+---
 
-<p data-i18n="closing_note">
-  Cảm ơn bạn đã ghé thăm trang giới thiệu! Đừng ngần ngại liên hệ với tôi nếu bạn có câu hỏi hoặc muốn hợp tác trong các dự án thú vị.
-</p>
+Cảm ơn bạn đã ghé thăm trang giới thiệu! Đừng ngần ngại liên hệ với tôi nếu bạn có câu hỏi hoặc muốn hợp tác trong các dự án thú vị.
+
+---
+
+### **Liên hệ**
+- **Họ và tên**: Henry Võ
+- **Chức danh**: Chuyên gia CNTT | Tư vấn & Giải pháp | Đào tạo
+- **Email**: [vdhoa@yahoo.com](mailto:vdhoa@yahoo.com)
+- **Điện thoại**: (+84) 0908 790 639
+- **Website**: [henry365blog.github.io](https://henry365blog.github.io)
+- **LinkedIn**: [linkedin.com/in/voduonghoa](https://www.linkedin.com/in/voduonghoa/)
